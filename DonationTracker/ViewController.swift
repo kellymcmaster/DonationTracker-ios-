@@ -9,12 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registerButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    @IBAction func loginButtonPressed(_ sender: Any) {
+    }
+    @IBAction func unwindToMainScreen(sender: UIStoryboardSegue) {
+        
+    }
 }
-

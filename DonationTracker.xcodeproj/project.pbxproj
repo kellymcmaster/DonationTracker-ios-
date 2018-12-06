@@ -12,6 +12,13 @@
 		A2053E3B21AE13EF00AE5003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2053E3921AE13EF00AE5003 /* Main.storyboard */; };
 		A2053E3D21AE13F000AE5003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2053E3C21AE13F000AE5003 /* Assets.xcassets */; };
 		A2053E4021AE13F000AE5003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2053E3E21AE13F000AE5003 /* LaunchScreen.storyboard */; };
+		A29F37D921B8993B00644A28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37D821B8993B00644A28 /* Model.swift */; };
+		A29F37DB21B89A4A00644A28 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37DA21B89A4A00644A28 /* Account.swift */; };
+		A29F37E221B8A31100644A28 /* RegisterScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37E121B8A31100644A28 /* RegisterScreenViewController.swift */; };
+		A29F37E421B8C8D700644A28 /* AccountDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37E321B8C8D700644A28 /* AccountDatabase.swift */; };
+		A29F37E821B9067600644A28 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37E721B9067600644A28 /* LoginScreenViewController.swift */; };
+		A29F37EA21B908A000644A28 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37E921B908A000644A28 /* HomeScreenViewController.swift */; };
+		A29F37EC21B9800900644A28 /* AccountRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37EB21B9800900644A28 /* AccountRole.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		A2053E3C21AE13F000AE5003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2053E3F21AE13F000AE5003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2053E4121AE13F000AE5003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A29F37D821B8993B00644A28 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A29F37DA21B89A4A00644A28 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		A29F37E121B8A31100644A28 /* RegisterScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenViewController.swift; sourceTree = "<group>"; };
+		A29F37E321B8C8D700644A28 /* AccountDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDatabase.swift; sourceTree = "<group>"; };
+		A29F37E721B9067600644A28 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		A29F37E921B908A000644A28 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		A29F37EB21B9800900644A28 /* AccountRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRole.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,29 @@
 		A2053E3421AE13EF00AE5003 /* DonationTracker */ = {
 			isa = PBXGroup;
 			children = (
+				A29F37E021B89ED100644A28 /* Controllers */,
 				A2053E3521AE13EF00AE5003 /* AppDelegate.swift */,
 				A2053E3721AE13EF00AE5003 /* ViewController.swift */,
 				A2053E3921AE13EF00AE5003 /* Main.storyboard */,
 				A2053E3C21AE13F000AE5003 /* Assets.xcassets */,
 				A2053E3E21AE13F000AE5003 /* LaunchScreen.storyboard */,
 				A2053E4121AE13F000AE5003 /* Info.plist */,
+				A29F37D821B8993B00644A28 /* Model.swift */,
+				A29F37DA21B89A4A00644A28 /* Account.swift */,
+				A29F37E121B8A31100644A28 /* RegisterScreenViewController.swift */,
+				A29F37E321B8C8D700644A28 /* AccountDatabase.swift */,
+				A29F37E721B9067600644A28 /* LoginScreenViewController.swift */,
+				A29F37E921B908A000644A28 /* HomeScreenViewController.swift */,
+				A29F37EB21B9800900644A28 /* AccountRole.swift */,
 			);
 			path = DonationTracker;
+			sourceTree = "<group>";
+		};
+		A29F37E021B89ED100644A28 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29F37D921B8993B00644A28 /* Model.swift in Sources */,
+				A29F37EA21B908A000644A28 /* HomeScreenViewController.swift in Sources */,
+				A29F37E821B9067600644A28 /* LoginScreenViewController.swift in Sources */,
+				A29F37DB21B89A4A00644A28 /* Account.swift in Sources */,
 				A2053E3821AE13EF00AE5003 /* ViewController.swift in Sources */,
+				A29F37E221B8A31100644A28 /* RegisterScreenViewController.swift in Sources */,
+				A29F37EC21B9800900644A28 /* AccountRole.swift in Sources */,
+				A29F37E421B8C8D700644A28 /* AccountDatabase.swift in Sources */,
 				A2053E3621AE13EF00AE5003 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +319,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX7RRV43TW;
 				INFOPLIST_FILE = DonationTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +338,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CX7RRV43TW;
 				INFOPLIST_FILE = DonationTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

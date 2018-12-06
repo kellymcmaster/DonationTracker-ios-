@@ -12,8 +12,9 @@ class Model {
     
     static let shared = Model()
     private let accountDb = AccountDatabase()
+    private let locationDb = LocationDatabase()
     private var currentAccount : Account?
-
+    private var currentLocation: Location?
     
     init() {}
     
@@ -40,5 +41,13 @@ class Model {
     
     func getCurrentAccount() -> Account {
         return self.currentAccount!
+    }
+    
+    func addLocation(location: Location) {
+        self.locationDb.addLocation(location: location)
+    }
+    
+    func setCurrentLocation(location: Location) {
+        self.currentLocation = location
     }
 }

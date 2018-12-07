@@ -11,6 +11,7 @@ import UIKit
 class HomeScreenViewController: UIViewController {
 
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var viewLocationsButton: UIButton!
     @IBOutlet weak var welcomeLabel: UILabel!
     
     override func viewDidLoad() {
@@ -26,31 +27,6 @@ class HomeScreenViewController: UIViewController {
         welcomeLabel.text = welcomeMessage
         welcomeLabel.textAlignment = .center
         welcomeLabel.sizeToFit()
-    }
-    
-    @IBAction func logoutButtonPressed(_ sender: Any) {
-    }
-    
-    func readme() throws -> String{
-        // stuff in here including a error type
-        let myData =  try? readme()
-        if myData == nil {
-            //error handling here
-        }
-    }
-    
-    func readDataFromFile(file:String)-> String!{
-        guard let filepath = Bundle.mainBundle.pathForResource(file, ofType: "csv")
-            else {
-                return nil
-        }
-        do {
-            let contents = try String(contentsOfFile: filepath, usedEncoding: nil)
-            return contents
-        } catch {
-            print("File Read Error for file \(filepath)")
-            return nil
-        }
     }
     
 }

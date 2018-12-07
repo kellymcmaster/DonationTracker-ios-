@@ -50,4 +50,20 @@ class Model {
     func setCurrentLocation(location: Location) {
         self.currentLocation = location
     }
+    
+    func getLocationsList() -> [Location] {
+        return locationDb.getLocations()
+    }
+    
+    func location(atIndex: Int) -> Location {
+        return locationDb.location(atIndex: atIndex)
+    }
+    
+    func location(withKey: String) -> Location {
+        return locationDb.location(withKey: withKey)
+    }
+    
+    func getCurrentLocation() -> Location {
+        return currentLocation!
+    }
 }

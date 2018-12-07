@@ -22,7 +22,7 @@ class Location {
     private var website: String
     private var address: String
     
-    init(uniqueKey: String, name: String, latitude: String, longitude: String, streetAddress: String, city: String, state: String, zip: String, type: String, phone: String, website: String, address: String) {
+    init(uniqueKey: String, name: String, latitude: String, longitude: String, streetAddress: String, city: String, state: String, zip: String, type: String, phone: String, website: String) {
         self.uniqueKey = uniqueKey
         self.name = name
         self.latitude = latitude

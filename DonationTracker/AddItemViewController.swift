@@ -18,6 +18,8 @@ class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var timeLabel: UILabel!
     
+    var time = ""
+    
     let categoryStrings = ["Clothing", "Hat", "Kitchen", "Electronics", "Household", "Other"]
     let categories = [Category.CLOTHING, Category.HAT, Category.KITCHEN, Category.ELECTRONICS, Category.HOUSEHOLD, Category.OTHER]
     
@@ -41,7 +43,7 @@ class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     
     @IBAction func addButtonPressed(_ sender: Any) {
-        let item = Item(location: Model.shared.getCurrentLocation(), shortDescription: shortDescField.text!, fullDescription: fullDescField.text!, value: Int(valueField.text!)!, category: selectedCategory)
+        let item = Item(location: Model.shared.getCurrentLocation(), shortDescription: shortDescField.text!, fullDescription: fullDescField.text!, value: Int(valueField.text!)!, category: selectedCategory, time: time)
         
         Model.shared.addItem(item: item)
         
@@ -56,6 +58,7 @@ class AddItemViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         let strDate = dateFormatter.string(from: timePicker.date)
         timeLabel.text = strDate
+        time = strDate
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

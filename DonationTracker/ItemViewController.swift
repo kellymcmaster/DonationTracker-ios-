@@ -31,7 +31,7 @@ class ItemViewController: UIViewController {
         fullDescLabel.text = (fullDescLabel.text ?? "") + (item?.getFullDescription() ?? "")
         valueLabel.text = (valueLabel.text ?? "") + "\((item!).getValue())"
         categoryLabel.text = (categoryLabel.text ?? "") + (item?.getCategory().rawValue ?? "")
-        //timeLabel.text = item?.getTime()
+        timeLabel.text = (timeLabel.text ?? "") + (item?.getTime() ?? "")
     }
     
     @IBAction func backButtonPressed(_ sender: Any) {

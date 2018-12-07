@@ -14,13 +14,15 @@ class Item {
     var fullDescription: String
     var value: Int
     var category: Category
+    var time: String
     
-    init(location: Location, shortDescription: String, fullDescription: String, value: Int, category: Category) {
+    init(location: Location, shortDescription: String, fullDescription: String, value: Int, category: Category, time: String) {
         self.location = location
         self.shortDescription = shortDescription
         self.fullDescription = fullDescription
         self.value = value
         self.category = category
+        self.time = time
     }
     
     func getLocation() -> Location {
@@ -41,5 +43,9 @@ class Item {
     
     func getCategory() -> Category {
         return category
+    }
+    
+    func getTime() -> String {
+        return time
     }
 }

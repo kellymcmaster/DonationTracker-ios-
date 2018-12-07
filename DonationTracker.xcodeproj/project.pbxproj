@@ -19,6 +19,12 @@
 		A29F37E821B9067600644A28 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37E721B9067600644A28 /* LoginScreenViewController.swift */; };
 		A29F37EA21B908A000644A28 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37E921B908A000644A28 /* HomeScreenViewController.swift */; };
 		A29F37EC21B9800900644A28 /* AccountRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37EB21B9800900644A28 /* AccountRole.swift */; };
+		A29F37EE21B9D4AE00644A28 /* LocationData.csv in Resources */ = {isa = PBXBuildFile; fileRef = A29F37ED21B9D4AD00644A28 /* LocationData.csv */; };
+		A29F37F021B9D63000644A28 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37EF21B9D63000644A28 /* Location.swift */; };
+		A29F37F221B9D83E00644A28 /* LocationDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37F121B9D83E00644A28 /* LocationDatabase.swift */; };
+		A29F37F421B9E54000644A28 /* LocationListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37F321B9E54000644A28 /* LocationListTableViewController.swift */; };
+		A29F37F621B9E5B400644A28 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37F521B9E5B400644A28 /* LocationViewController.swift */; };
+		A29F37F821B9EB1100644A28 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37F721B9EB1100644A28 /* LocationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		A29F37E721B9067600644A28 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		A29F37E921B908A000644A28 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		A29F37EB21B9800900644A28 /* AccountRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRole.swift; sourceTree = "<group>"; };
+		A29F37ED21B9D4AD00644A28 /* LocationData.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LocationData.csv; path = ../../../../../Downloads/LocationData.csv; sourceTree = "<group>"; };
+		A29F37EF21B9D63000644A28 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A29F37F121B9D83E00644A28 /* LocationDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDatabase.swift; sourceTree = "<group>"; };
+		A29F37F321B9E54000644A28 /* LocationListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListTableViewController.swift; sourceTree = "<group>"; };
+		A29F37F521B9E5B400644A28 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		A29F37F721B9EB1100644A28 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 		A2053E3421AE13EF00AE5003 /* DonationTracker */ = {
 			isa = PBXGroup;
 			children = (
+				A29F37ED21B9D4AD00644A28 /* LocationData.csv */,
 				A29F37E021B89ED100644A28 /* Controllers */,
 				A2053E3521AE13EF00AE5003 /* AppDelegate.swift */,
 				A2053E3721AE13EF00AE5003 /* ViewController.swift */,
@@ -82,6 +95,11 @@
 				A29F37E721B9067600644A28 /* LoginScreenViewController.swift */,
 				A29F37E921B908A000644A28 /* HomeScreenViewController.swift */,
 				A29F37EB21B9800900644A28 /* AccountRole.swift */,
+				A29F37EF21B9D63000644A28 /* Location.swift */,
+				A29F37F121B9D83E00644A28 /* LocationDatabase.swift */,
+				A29F37F321B9E54000644A28 /* LocationListTableViewController.swift */,
+				A29F37F521B9E5B400644A28 /* LocationViewController.swift */,
+				A29F37F721B9EB1100644A28 /* LocationTableViewCell.swift */,
 			);
 			path = DonationTracker;
 			sourceTree = "<group>";
@@ -152,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2053E4021AE13F000AE5003 /* LaunchScreen.storyboard in Resources */,
+				A29F37EE21B9D4AE00644A28 /* LocationData.csv in Resources */,
 				A2053E3D21AE13F000AE5003 /* Assets.xcassets in Resources */,
 				A2053E3B21AE13EF00AE5003 /* Main.storyboard in Resources */,
 			);
@@ -164,10 +183,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29F37F421B9E54000644A28 /* LocationListTableViewController.swift in Sources */,
 				A29F37D921B8993B00644A28 /* Model.swift in Sources */,
 				A29F37EA21B908A000644A28 /* HomeScreenViewController.swift in Sources */,
+				A29F37F021B9D63000644A28 /* Location.swift in Sources */,
+				A29F37F221B9D83E00644A28 /* LocationDatabase.swift in Sources */,
 				A29F37E821B9067600644A28 /* LoginScreenViewController.swift in Sources */,
 				A29F37DB21B89A4A00644A28 /* Account.swift in Sources */,
+				A29F37F621B9E5B400644A28 /* LocationViewController.swift in Sources */,
+				A29F37F821B9EB1100644A28 /* LocationTableViewCell.swift in Sources */,
 				A2053E3821AE13EF00AE5003 /* ViewController.swift in Sources */,
 				A29F37E221B8A31100644A28 /* RegisterScreenViewController.swift in Sources */,
 				A29F37EC21B9800900644A28 /* AccountRole.swift in Sources */,

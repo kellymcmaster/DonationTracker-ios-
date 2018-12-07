@@ -11,6 +11,7 @@ import UIKit
 class HomeScreenViewController: UIViewController {
 
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var viewLocationsButton: UIButton!
     @IBOutlet weak var welcomeLabel: UILabel!
     
     override func viewDidLoad() {
@@ -21,14 +22,11 @@ class HomeScreenViewController: UIViewController {
     fileprivate func setupView() {
         var welcomeMessage = "Welcome, "
         let currentAccount = Model.shared.getCurrentAccount()
-        welcomeMessage += currentAccount.getUsername() + " (" + currentAccount.getRole().rawValue + ")"
+        welcomeMessage += currentAccount.getUsername()
         
         welcomeLabel.text = welcomeMessage
         welcomeLabel.textAlignment = .center
         welcomeLabel.sizeToFit()
-    }
-    
-    @IBAction func logoutButtonPressed(_ sender: Any) {
     }
     
 }

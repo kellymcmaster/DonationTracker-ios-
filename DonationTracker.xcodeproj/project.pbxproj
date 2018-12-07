@@ -25,6 +25,13 @@
 		A29F37F421B9E54000644A28 /* LocationListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37F321B9E54000644A28 /* LocationListTableViewController.swift */; };
 		A29F37F621B9E5B400644A28 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37F521B9E5B400644A28 /* LocationViewController.swift */; };
 		A29F37F821B9EB1100644A28 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37F721B9EB1100644A28 /* LocationTableViewCell.swift */; };
+		A29F37FA21BA3CBC00644A28 /* ItemListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37F921BA3CBC00644A28 /* ItemListTableViewController.swift */; };
+		A29F37FC21BA3E4800644A28 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37FB21BA3E4800644A28 /* ItemTableViewCell.swift */; };
+		A29F37FE21BA3E5F00644A28 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37FD21BA3E5F00644A28 /* ItemViewController.swift */; };
+		A29F380021BA3ECF00644A28 /* ItemDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F37FF21BA3ECF00644A28 /* ItemDatabase.swift */; };
+		A29F380221BA3F7500644A28 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F380121BA3F7500644A28 /* Category.swift */; };
+		A29F380421BA4AD000644A28 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F380321BA4AD000644A28 /* Item.swift */; };
+		A29F380621BABE1600644A28 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29F380521BABE1600644A28 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +55,13 @@
 		A29F37F321B9E54000644A28 /* LocationListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListTableViewController.swift; sourceTree = "<group>"; };
 		A29F37F521B9E5B400644A28 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		A29F37F721B9EB1100644A28 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		A29F37F921BA3CBC00644A28 /* ItemListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewController.swift; sourceTree = "<group>"; };
+		A29F37FB21BA3E4800644A28 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		A29F37FD21BA3E5F00644A28 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		A29F37FF21BA3ECF00644A28 /* ItemDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDatabase.swift; sourceTree = "<group>"; };
+		A29F380121BA3F7500644A28 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A29F380321BA4AD000644A28 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A29F380521BABE1600644A28 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +114,13 @@
 				A29F37F321B9E54000644A28 /* LocationListTableViewController.swift */,
 				A29F37F521B9E5B400644A28 /* LocationViewController.swift */,
 				A29F37F721B9EB1100644A28 /* LocationTableViewCell.swift */,
+				A29F37F921BA3CBC00644A28 /* ItemListTableViewController.swift */,
+				A29F37FB21BA3E4800644A28 /* ItemTableViewCell.swift */,
+				A29F37FD21BA3E5F00644A28 /* ItemViewController.swift */,
+				A29F37FF21BA3ECF00644A28 /* ItemDatabase.swift */,
+				A29F380121BA3F7500644A28 /* Category.swift */,
+				A29F380321BA4AD000644A28 /* Item.swift */,
+				A29F380521BABE1600644A28 /* AddItemViewController.swift */,
 			);
 			path = DonationTracker;
 			sourceTree = "<group>";
@@ -183,18 +204,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29F380421BA4AD000644A28 /* Item.swift in Sources */,
 				A29F37F421B9E54000644A28 /* LocationListTableViewController.swift in Sources */,
 				A29F37D921B8993B00644A28 /* Model.swift in Sources */,
+				A29F380221BA3F7500644A28 /* Category.swift in Sources */,
 				A29F37EA21B908A000644A28 /* HomeScreenViewController.swift in Sources */,
 				A29F37F021B9D63000644A28 /* Location.swift in Sources */,
+				A29F37FC21BA3E4800644A28 /* ItemTableViewCell.swift in Sources */,
+				A29F380021BA3ECF00644A28 /* ItemDatabase.swift in Sources */,
 				A29F37F221B9D83E00644A28 /* LocationDatabase.swift in Sources */,
 				A29F37E821B9067600644A28 /* LoginScreenViewController.swift in Sources */,
 				A29F37DB21B89A4A00644A28 /* Account.swift in Sources */,
+				A29F380621BABE1600644A28 /* AddItemViewController.swift in Sources */,
 				A29F37F621B9E5B400644A28 /* LocationViewController.swift in Sources */,
 				A29F37F821B9EB1100644A28 /* LocationTableViewCell.swift in Sources */,
 				A2053E3821AE13EF00AE5003 /* ViewController.swift in Sources */,
 				A29F37E221B8A31100644A28 /* RegisterScreenViewController.swift in Sources */,
+				A29F37FA21BA3CBC00644A28 /* ItemListTableViewController.swift in Sources */,
 				A29F37EC21B9800900644A28 /* AccountRole.swift in Sources */,
+				A29F37FE21BA3E5F00644A28 /* ItemViewController.swift in Sources */,
 				A29F37E421B8C8D700644A28 /* AccountDatabase.swift in Sources */,
 				A2053E3621AE13EF00AE5003 /* AppDelegate.swift in Sources */,
 			);

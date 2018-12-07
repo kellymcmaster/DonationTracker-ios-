@@ -9,6 +9,7 @@
 import UIKit
 
 class LocationListTableViewController: UITableViewController {
+    @IBOutlet weak var backButton: UIButton!
     var locations = [Location]()
     var selectedRow: Int!
     
@@ -53,4 +54,7 @@ class LocationListTableViewController: UITableViewController {
         self.performSegue(withIdentifier: "locationDetailSegue", sender: self)
     }
 
+    @IBAction func backButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }

@@ -13,8 +13,10 @@ class Model {
     static let shared = Model()
     private let accountDb = AccountDatabase()
     private let locationDb = LocationDatabase()
+    private let itemDb = ItemDatabase()
     private var currentAccount : Account?
     private var currentLocation: Location?
+    private var currentItem: Item?
     
     init() {}
     
@@ -65,5 +67,25 @@ class Model {
     
     func getCurrentLocation() -> Location {
         return currentLocation!
+    }
+    
+    func addItem(item: Item) {
+        itemDb.addItem(item: item)
+    }
+    
+    func getItemsForCurrentLocation() -> [Item] {
+        return itemDb.getItemsForLocation(location: self.currentLocation!)
+    }
+    
+    func setCurrentItem(item: Item) {
+        self.currentItem = item
+    }
+    
+    func getCurrentItem() -> Item {
+        return self.currentItem!
+    }
+    
+    func item(atIndex: Int) -> Item {
+        return itemDb.item(atIndex: atIndex)
     }
 }

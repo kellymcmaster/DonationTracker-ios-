@@ -16,6 +16,7 @@ class LocationViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var viewItemsButton: UIButton!
     var location: Location?
     
     
